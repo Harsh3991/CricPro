@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+
+#main-container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/cricpro-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(82, 163, 254);
+}
+
+nav{
+    display: flex;
+}
+
+#logo{
+    margin-left: auto;
+    margin-right: 60px;
+}
+
+#heading>h1{
+    font-size: 60px;
+    font-weight: bolder;
+    text-shadow: 3px 4px 4px black;
+}
+
+#heading>p{
+    font-size: 30px;
+    color: rgb(105, 105, 105);
+}
+
+table{
+    background-color: white;
+    border-collapse: collapse;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 67%;
+    height: 67%;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+table,tbody,td,tr{
+    border-bottom: 1px solid rgba(134, 134, 134, 0.5);
+    padding: 4px 0px 4px 0px;
+}
+
+.grey{
+    color: rgb(131, 131, 131);
+}
+
+th{
+    background-color: red;
+    color: white;
+    justify-content: space-between;
+}
+
+td,th{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.first-row{
+    padding-right: 100px;
+    padding-left: 25px;
+}
+
+.footer{
+    font-weight: bold;
+    margin-top: 40px;
+    font-size: 15px;
+}
+
+table,#heading,.footer{
+    margin-left: 3%;
+}
+
+.firstof-column{
+    display: flex;
+    padding-left: 25px;
+}
+
+.lastof-column,.row-SR{
+    text-align: end;
+    padding-right: 20px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    max-width: 450px; /* Adjust the max-width as needed */
+    background-color: #fff;
+    border: 2px solid #000;
+    z-index: 1;
+}
+
+.popup h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.popup p{
+    text-align: center;
+}
+
+.closePopup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Show the popup when the anchor link is targeted */
+.popup:target {
+    display: block;
+}
+
+.popup img{
+    max-width: 400px;
+    margin-left: 6px;
+}
